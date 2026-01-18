@@ -8,17 +8,21 @@ import Home from "./musify/pages/Home";
 
 export default function App() {
   return (
-    <>
-    <div className="app">
-      <Sidebar />
-
-      <div className="main-content">
-        <Navbar />
-        <Home />
+    <div className='h-screen bg-black'>
+      <div className='h-[90%] flex'>
+        <Sidebar />
+        
+        <div className="main-content flex-1 flex flex-col">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </div>
       </div>
 
-          <Player />
-        </div>
-        </>
-        )
-    }
+
+      )
+      }
+     
+        
