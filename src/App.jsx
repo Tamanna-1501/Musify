@@ -5,23 +5,17 @@ import Sidebar from "./musify/components/layout/Sidebar";
 import Navbar from "./musify/components/layout/Navbar";
 import Player from "./musify/components/layout/Player";
 import Home from "./musify/pages/Home";
+import Display from "./musify/components/layout/display";
 
 export default function App() {
   return (
     <div className='h-screen bg-black'>
       <div className='h-[90%] flex'>
         <Sidebar />
-        
-        <div className="main-content flex-1 flex flex-col">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </div>
+      <Display/>
+       </div>
+       <Player/> 
       </div>
-      </div>
-
-
       )
       }
      
